@@ -1,0 +1,48 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url(dancing-script.regular.ttf);
+  }
+h1 {
+    color:blueviolet;
+}
+#first-p {
+    color: orange;
+    font-weight: bold;
+}
+div {
+    color: aqua;
+}
+.reddiv {
+    background-color: bisque;
+}
+h3 {
+    letter-spacing: 10px;
+    text-align: center;
+    text-decoration: overline;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Pangolin', cursive;
+    color: indianred;
+}
+.text-p {
+    line-height: 25px;
+    text-align: justify;
+    text-indent: 10px;
+    /*font-family: Arial, Helvetica, sans-serif;*/
+    font-family: myFirstFont;
+}     
+ul {
+    list-style: lower-alpha;
+}
+ul:hover {
+    text-decoration: overline;
+}
+a {
+    color: #00f;
+}
+a:visited {
+    color: #666;
+}
+a:hover {
+    text-decoration: none;
+}
