@@ -1,0 +1,30 @@
+body{
+    color: #373;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.position{
+    font-weight: bolder;
+}
+h1 {
+    font-style: italic;
+}
+th {
+    text-transform: uppercase;
+}
+a {
+    color: rgb(253, 47, 226);
+    text-decoration: underline ;
+}
+a:visited{
+    color: rgb(105, 0, 26);
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+ul {
+    list-style: square;
+}
+input {
+    background-color: coral;
+}
