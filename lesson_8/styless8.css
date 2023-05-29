@@ -1,0 +1,40 @@
+body {
+    font-family: "Times New Roman", Times, serif;
+    /*align: center;*/
+    margin-left: 25%; 
+}
+h1 {
+    font-style: italic;
+}
+.line {
+    border-bottom: 5px solid salmon;
+    width: 40%;
+}
+img {
+    border: 2px solid sandybrown;
+    padding: 10px;
+}
+table {
+    background-color: rgb(39, 157, 204);
+    
+}
+th {
+    background-color: rgb(118, 45, 235);
+}
+a {
+    color: rgb(253, 47, 226);
+    text-decoration: underline ;
+}
+a:visited{
+    color: rgb(105, 0, 26);
+    text-decoration: underline;
+}
+a:hover {
+    text-decoration: none;
+}
+ul {
+    list-style: square;
+}
+input {
+    background-color: coral;
+}
