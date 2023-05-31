@@ -1,0 +1,33 @@
+label, input {
+    display: block;
+    margin-bottom: 10px;
+}
+div.lorem_ipson {
+    width: 500px;
+    margin: 50px;
+    border: 2px solid salmon;
+    padding: 10px;
+}
+span {
+    width: 500px;
+    height: 50px;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.hidden {
+    display: none;
+}
+.box div {
+    width: 150px;
+    height: 100px;
+    background: #858;
+    margin: 10px;
+    float: right;
+}
+div.var1 {
+    width: 150px;
+    height: 100px;
+    background: rgb(255, 231, 19);
+}

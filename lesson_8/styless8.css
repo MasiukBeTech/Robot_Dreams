@@ -15,8 +15,7 @@ img {
     padding: 10px;
 }
 table {
-    background-color: rgb(39, 157, 204);
-    
+    background-color: rgb(39, 157, 204);   
 }
 th {
     background-color: rgb(118, 45, 235);
@@ -37,4 +36,12 @@ ul {
 }
 input {
     background-color: coral;
+}
+p {
+    font-weight: bolder;
+    text-decoration-line: underline;
+}
+table, th, td {
+    border: 1px solid #ddd;
+    text-align: center;
 }
