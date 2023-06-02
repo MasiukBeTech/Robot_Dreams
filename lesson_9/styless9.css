@@ -49,7 +49,7 @@ table, th, td {
     width: 205px;
     height: 280px;
 } 
-div.text-aline {
+div.total-text {
     margin: 50px;
     align-items: center;
     float: left;
@@ -59,7 +59,7 @@ div.text-aline {
 
 .skills {
     display: flex;
-    width: 100% ;
+    width: 100%;
     justify-content:right;
     flex-direction: column;
     align-items: flex-end;
