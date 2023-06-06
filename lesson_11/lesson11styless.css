@@ -1,0 +1,123 @@
+@font-face {
+    font-family: moPs;
+    src: url(mops.medium.ttf);
+}
+@font-face {
+    font-family: blackchancery;
+    src: url(blackchancery.regular.ttf);
+}
+body {
+    margin: 0;
+    font-family: moPs, serif;
+}
+header {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+}
+header img {
+    height: 70px;
+    width: 70px;
+    margin: 0 150px;
+}
+.work-hours p {
+    margin: 10px 0;
+}
+.work-adress p {
+    margin: 10px 0;
+    width: 212px;
+    height: 50px;
+    line-height: 25px;
+}
+nav {
+    height: 60px;
+    width: 100%;
+    background: #66FF66;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-style: normal;
+    font-size: 35px;
+    padding: 0 15px;
+    height: 60px;
+    line-height: 60px;
+}
+nav a:hover {
+    background-color: #248824;
+}
+nav a:nth-child(2) {
+    margin: 0 150px;
+}
+main .main-img {
+    width: 100%;
+    height: 300px;
+    background-image: url(main_restaurant_photo1.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+main h1 {
+    font-family: blackchancery;
+    font-size: 48px;
+    margin-top: -200px;
+    margin-left: 10%;
+}
+main a {
+    background: black;
+    width: 240px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 15%;
+}
+main a:hover {
+    background: #248824;
+}
+.menu {
+    width: 100%;
+    margin: 120px 0;
+    padding: 0 20px;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-container h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu-container div {
+    width: 33%;
+}
+
+.meal {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.meal img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.meal span {
+    font-size: 20px;
+    line-height: 60px;
+}
