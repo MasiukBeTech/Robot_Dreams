@@ -1,0 +1,67 @@
+main .main-img {
+    width: 100%;
+    height: 300px;
+    background-image: url(../imglesson/main_restaurant_photo1.jpg);
+    background-size: cover;
+    background-position: bottom;
+}
+main h1 {
+    font-family: blackchancery;
+    font-size: 48px;
+    margin-top: -200px;
+    margin-left: 10%;
+}
+main a {
+    background: black;
+    width: 240px;
+    height: 50px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #fff;
+    padding: 10px 20px;
+    margin-left: 15%;
+}
+main a:hover {
+    background: #248824;
+}
+.menu {
+    width: 100%;
+    margin: 120px 0;
+    padding: 0 20px;
+}
+
+.menu h2 {
+    text-align: center;
+    font-size: 35px;
+}
+
+.menu-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+.menu-container h4 {
+    text-align: center;
+    font-size: 25px;
+}
+
+.menu-container div {
+    width: 33%;
+}
+
+.meal {
+    display: flex;
+    margin-bottom: 25px;
+}
+
+.meal img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.meal span {
+    font-size: 20px;
+    line-height: 60px;
+}
