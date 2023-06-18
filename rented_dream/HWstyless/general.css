@@ -1,0 +1,32 @@
+@font-face {
+    font-family: moPs;
+    src: url(../fonts/mops.medium.ttf);
+}
+@font-face {
+    font-family: blackchancery;
+    src: url(../fonts/blackchancery.regular.ttf);
+}
+body {
+    margin: 0;
+    font-family: moPs, serif;
+    position: relative;
+    top: 0;
+}
+.main-theme {
+    --color-background: #15ADDD;
+    --highlight-color: #003d50;
+    --hover-botton: #1ebb45;
+    --backdown: 10px;
+}
+.my-theme {
+    --color-background: #cdb4db;
+    --highlight-color: #db00b6;
+    --hover-botton: #fc89b5;
+    --backdown: 10px; 
+}
+.catalog-theme {
+    --color-background: #25a244;
+    --highlight-color: #aacc00;
+    --hover-botton: #f15bb5;
+    --backdown: 10px; 
+}

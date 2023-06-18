@@ -10,25 +10,26 @@ main .main-img {
 }
 main h1 {
     font-family: blackchancery;
-    font-size: 64px;
+    font-size: 3em;
     position: absolute;
     color: #fff;
-    text-shadow: 2px 3px 3px #15ADDD;
+    text-shadow: 2px 3px 3px var(--color-background);
     bottom: 100px;
     left: 10%;
 }
 main a {
     text-decoration: none;
-    padding: 10px;
-    background-color: #15ADDD;
+    padding: var(--backdown);
+    background-color: var(--color-background);
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 1.7em;
     position: absolute;
     bottom: 55px;
     left: 20%;
+    border-radius: 5px;
 }
 main a:hover {
-    background: #1ebb45;
+    background: var(--hover-botton);
 }
 div.choice {
     display: flex;
@@ -53,7 +54,7 @@ div.type-choice {
     flex-direction: column;
     width: 100%;
     height: 250px;
-    margin: 10px 30px;
+    margin: var(--backdown) 30px;
 }
 .type-choice img {
     width: 100%;
@@ -61,7 +62,7 @@ div.type-choice {
 }
 .type-choice span {
     margin-top: -25px;
-    background-color: #15ADDD;
+    background-color: var(--color-background);
     text-align: right;
     color: #ffffff;
     font-size: 24px;
