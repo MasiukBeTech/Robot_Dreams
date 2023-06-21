@@ -15,31 +15,31 @@ h1 {
     position: relative;
     text-align: center;
     margin-top: 0;
-    color: #003d50;
+    color: var(--highlight-color);
     right: 25%;
 }
 h2 {
     position: relative;
     text-align: center;
     margin-bottom: 5px;
-    color: #003d50;
+    color: var(--highlight-color);
     right: 25%;
 }
 .contact-info p, .contact-info span {
     margin-top: 5px;
-    margin-bottom: 10px;
+    margin-bottom: var(--backdown);
     font-size: 1.4em;
 }
 .contact-info span {
     text-decoration: underline;
 }
 .address-map iframe {
-    border: 1px solid #003d50 !important;
+    border: 1px solid var(--highlight-color) !important;
     border-radius: 5px;
 }
 .contact-form {
     display: flex;
-    margin-top: 10px;
+    margin-top: var(--backdown);
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
@@ -48,26 +48,26 @@ h2 {
 }
 .contact-form label {
     font-size: 1.3em;
-    margin-top: 10px;
+    margin-top: var(--backdown);
 }
 .contact-form input[type="text"] {
     width: 400px;
     height: 30px;
     outline: 0;
-    border: 2px solid #003d50;
+    border: 2px solid var(--highlight-color);
     border-radius: 5px;
-    padding: 0 10px;
+    padding: 0 var(--backdown);
     font-size: 1.1em;
     color: #003d50;
     font-family: moPs, serif;
 }
 .contact-form input[type="text"]:focus {
-    border: 2px solid #15ADDD;
+    border: 2px solid var(--color-background);
 }
 input[type="text"]::placeholder, textarea::placeholder {
     font-size: 0.9em;
     font-family: moPs, serif;
-    color: #003d50;
+    color: var(--highlight-color);
     opacity: 0.8;
 }
 textarea[name="notes"]::placeholder{
@@ -76,24 +76,24 @@ textarea[name="notes"]::placeholder{
 .contact-form textarea {
     width: 400px;
     height: 200px;
-    padding: 10px;
-    border: 2px solid #003d50;
+    padding: var(--backdown);
+    border: 2px solid var(--highlight-color);
     border-radius: 5px;
     resize: none;
     font-size: 1.1em;
-    color: #003d50;
+    color: var(--highlight-color);
     font-family: moPs, serif;
 }
 .contact-form input[type="submit"] {
-    background: #15ADDD;
+    background: var(--color-background);
     width: 100px;
     height: 40px;
     font-family: moPs, serif;
     font-size: 1.3em;
     margin-top: 20px;
-    border: 2px solid #003d50;
+    border: 2px solid var(--highlight-color);
     border-radius: 5px;
 }
 .contact-form input[type="submit"]:hover {
-    background-color: #1ebb45;
+    background-color: var(--hover-botton);
 }

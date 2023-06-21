@@ -17,7 +17,7 @@ h1 {
     top: 90px;
     text-align: center;
     margin-top: 0;
-    color: #003d50;
+    color: var(--highlight-color);
 }
 img:hover {
     transform: scale(1.3);
