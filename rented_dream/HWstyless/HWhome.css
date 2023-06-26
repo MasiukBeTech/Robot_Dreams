@@ -46,9 +46,6 @@ div h2 {
     width: 100%;
     justify-content: space-around;
 }
-.choice-container div {
-    width: 25%;
-}
 div.type-choice {
     display: flex;
     flex-direction: column;
@@ -67,4 +64,52 @@ div.type-choice {
     color: #ffffff;
     font-size: 24px;
     padding-right: 5%;
+}
+
+@media screen and (max-width: 960px) {
+    .choice-container {
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+    .choice-container div {
+        width: 32%;
+}
+    div.choice {
+        margin: 0;
+    }
+}
+@media screen and (max-width: 640px) {
+    h1 {
+        display: none;
+    }
+    main a {
+        font-size: 1.4em;
+        position: absolute;
+        left: 5%;
+        bottom: 20%;
+        padding: 5px;
+    }
+    main .main-img {
+        height: 200px;
+    }
+    .choice-container div {
+        width: 45%;
+    }
+    div h2 {
+        font-size: 24px;
+        margin: 10px;
+    }
+    .type-choice span {
+        font-size: 1em;
+        margin-top: -15px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .choice-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .choice-container div {
+        width: 60%;
+}
 }
