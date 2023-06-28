@@ -118,7 +118,7 @@ div.type-choice {
     .choice-container div {
         width: 60%;
     }
-.type-choice img:hover {
+    .type-choice img:hover {
     transform: none;
     box-shadow: 0 0;
     }
