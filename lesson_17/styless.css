@@ -1,0 +1,76 @@
+h1 {
+    text-align: center;
+}
+.div1 {
+    width: 100px;
+    height: 100px;
+    background-color: greenyellow;
+    margin: 50px auto;
+    color: #fff;
+    transition: background-color 2s, width 5s, height 5s, transform 3s;
+    transition-delay: 2s;
+}
+.div1:hover {
+    background-color: blueviolet;
+    width: 150px;
+    height: 150px;
+    transform: rotate(180deg);
+}
+.div2 {
+    width: 200px;
+    height: 200px;
+    margin: 50px auto;
+    background-color: rgb(255, 47, 220);
+    animation-name: test-animation;
+    animation-duration: 3s;
+    animation-direction: reverse;
+}
+@keyframes test-animation {
+    0% {
+        background-color: rgb(255, 47, 220);
+    }
+    20% {
+        background-color: rgb(73, 9, 62);
+        width: 150px;
+        height: 150px;
+    }
+    40% {
+        background-color: rgb(44, 9, 73);
+        transform: translate(200px);
+    }
+    60% {
+        background-color: rgb(9, 44, 73);
+    }
+    80% {
+        background-color: rgb(71, 109, 11);
+        width: 50px;
+        height: 50px;
+    }
+    100% {
+        background-color: coral;
+    }
+}
+.div3 {
+    width: 200px;
+    height: 200px;
+    background-color: rgb(255, 47, 82);
+    position: absolute;
+    animation-name: changes;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+.div3:hover {
+    animation-play-state: paused;
+}
+@keyframes changes {
+    0% {
+        left: 0;
+    }
+    50% {
+        /*left: calc(100% - 200px);*/
+        left: 2000px
+    }
+    100% {
+        left: 0;
+    }
+}

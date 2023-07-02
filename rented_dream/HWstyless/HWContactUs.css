@@ -40,6 +40,18 @@ div.address-map iframe {
     flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
+    animation: form-animation;
+    animation-duration: 4s;
+}
+@keyframes form-animation {
+    from {
+        transform: scale(2);
+        filter: opacity(0);
+    }
+    to {
+        transform: scale(1.0);
+        filter: opacity(1.0);
+    }
 }
 .contact-form label {
     font-size: 1.3em;
