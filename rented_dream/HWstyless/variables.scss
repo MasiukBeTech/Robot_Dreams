@@ -1,0 +1,6 @@
+@mixin animation ($value1) {
+    animation-duration: $value1;
+}
+@mixin animation-scale {
+    transform: scale(1.3);
+}
