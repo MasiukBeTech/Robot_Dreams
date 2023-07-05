@@ -1,0 +1,43 @@
+@import "variables";
+
+main {
+  background: $red-color;
+
+  nav {
+    width: 400px;
+
+    &.selected {
+      font-size: 30px;
+    }
+
+    input {
+      border: none;
+      margin-top: 50px;
+
+      &[disabled] {
+        border: 1px solid black;
+      }
+    }
+
+    ul {
+      padding: 0;
+      font: {
+        size: 10px;
+        family: Arial, sans-serif;
+      }
+
+      li {
+        background: green;
+        @include test;
+
+        a {
+          text-decoration: none;
+          @include spaces (20px, 15px);
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+      }
+    }
+  }
+}

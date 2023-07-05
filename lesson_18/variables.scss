@@ -1,0 +1,11 @@
+$red-color: red;
+
+@mixin test {
+    padding: 10px;
+    margin: 30px;
+}
+@mixin spaces ($value1, $margin) {
+    padding: $value1;
+    margin: $margin;
+    border-bottom: $value1 solid red;
+}
