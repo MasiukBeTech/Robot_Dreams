@@ -45,59 +45,29 @@ div.address-map iframe {
     width: 100%;
 }
 .contact-form {
-    display: flex;
-    margin-top: var(--backdown);
-    flex: {
-        wrap: wrap;
-        direction: column;
-    }
-    align-content: center;
     animation: form-animation;
     animation-duration: 4s;
-    
-    label {
-        font-size: 1.3em;
-        margin-top: var(--backdown);
-    }
 
-    input[type="text"] {
-        width: 400px;
-        height: 30px;
+    input[type="text"], input[type="email"]  {
         outline: 0;
         border: 2px solid var(--highlight-color);
-        border-radius: 5px;
-        padding: 0 var(--backdown);
-        font: {
-            size: 1.1em;
-            family: moPs, serif;
-        }
-        color: var(--highlight-color);
-        
+        font-size: 1.3em;
+        color: var(--highlight-color); 
 
         &:focus {
             border: 2px solid var(--color-background);
         }
 
         &::placeholder {
-            font: {
-                size: 0.9em;
-                family: moPs, serif;
-            }
+            font-size: 0.9em;
             color: var(--highlight-color);
             opacity: 0.8;
         }
     }
     textarea {
-        width: 400px;
-        height: 200px;
-        padding: var(--backdown);
         border: 2px solid var(--highlight-color);
-        border-radius: 5px;
         resize: none;
-        font: {
-            size: 1.1em;
-            family: moPs, serif;
-        }
+        font-size: 1.1em;
         color: var(--highlight-color);
         
         &::placeholder{
@@ -105,16 +75,8 @@ div.address-map iframe {
         }
     }
     input[type="submit"] {
-        background: var(--color-background);
-        width: 100px;
-        height: 40px;
-        font: {
-            family: moPs, serif;
-            size: 1.3em;
-        }
-        margin-top: 20px;
+        font-size: 1.3em;
         border: 2px solid var(--highlight-color);
-        border-radius: 5px;
 
         &:hover {
             background-color: var(--hover-botton);

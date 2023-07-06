@@ -367,61 +367,35 @@ div.address-map iframe {
 }
 
 .contact-form {
-  display: flex;
-  margin-top: var(--backdown);
-  flex-wrap: wrap;
-  flex-direction: column;
-  align-content: center;
   animation: form-animation;
   animation-duration: 4s;
 }
-.contact-form label {
-  font-size: 1.3em;
-  margin-top: var(--backdown);
-}
-.contact-form input[type=text] {
-  width: 400px;
-  height: 30px;
+.contact-form input[type=text], .contact-form input[type=email] {
   outline: 0;
   border: 2px solid var(--highlight-color);
-  border-radius: 5px;
-  padding: 0 var(--backdown);
-  font-size: 1.1em;
-  font-family: moPs, serif;
+  font-size: 1.3em;
   color: var(--highlight-color);
 }
-.contact-form input[type=text]:focus {
+.contact-form input[type=text]:focus, .contact-form input[type=email]:focus {
   border: 2px solid var(--color-background);
 }
-.contact-form input[type=text]::placeholder {
+.contact-form input[type=text]::placeholder, .contact-form input[type=email]::placeholder {
   font-size: 0.9em;
-  font-family: moPs, serif;
   color: var(--highlight-color);
   opacity: 0.8;
 }
 .contact-form textarea {
-  width: 400px;
-  height: 200px;
-  padding: var(--backdown);
   border: 2px solid var(--highlight-color);
-  border-radius: 5px;
   resize: none;
   font-size: 1.1em;
-  font-family: moPs, serif;
   color: var(--highlight-color);
 }
 .contact-form textarea::placeholder {
   font-size: 1.2em;
 }
 .contact-form input[type=submit] {
-  background: var(--color-background);
-  width: 100px;
-  height: 40px;
-  font-family: moPs, serif;
   font-size: 1.3em;
-  margin-top: 20px;
   border: 2px solid var(--highlight-color);
-  border-radius: 5px;
 }
 .contact-form input[type=submit]:hover {
   background-color: var(--hover-botton);
