@@ -218,7 +218,7 @@ header div.nav a {
 header div.nav a:hover {
   background-color: var(--highlight-color);
 }
-header p, header .contact-info span, .contact-info header span {
+header p {
   width: 35%;
   height: 30px;
   line-height: 24px;
@@ -250,7 +250,7 @@ header button span {
 }
 
 @media screen and (max-width: 960px) {
-  header p, header .contact-info span, .contact-info header span {
+  header p {
     display: none;
   }
 }
@@ -333,7 +333,7 @@ header button span {
   position: relative;
   top: 90px;
 }
-.contact-us main .container {
+.contact-us main .main-container {
   width: 100%;
   max-width: 800px;
   margin: 0 auto 100px;
@@ -350,13 +350,9 @@ header button span {
   color: var(--highlight-color);
 }
 
-.contact-info p, .contact-info span {
-  margin-top: 5px;
-  margin-bottom: var(--backdown);
-  font-size: 1.4em;
-}
-.contact-info span {
-  text-decoration: underline;
+.contact-info {
+  font-size: 1.1em;
+  margin: 15px 0;
 }
 
 div.address-map iframe {
@@ -370,11 +366,13 @@ div.address-map iframe {
   animation: form-animation;
   animation-duration: 4s;
 }
+.contact-form label {
+  font-size: 1.2em;
+}
 .contact-form input[type=text], .contact-form input[type=email] {
   outline: 0;
   border: 2px solid var(--highlight-color);
   font-size: 1.3em;
-  color: var(--highlight-color);
 }
 .contact-form input[type=text]:focus, .contact-form input[type=email]:focus {
   border: 2px solid var(--color-background);
@@ -385,7 +383,6 @@ div.address-map iframe {
   opacity: 0.8;
 }
 .contact-form textarea {
-  border: 2px solid var(--highlight-color);
   resize: none;
   font-size: 1.1em;
   color: var(--highlight-color);
@@ -412,26 +409,17 @@ div.address-map iframe {
   }
 }
 @media screen and (max-width: 640px) {
-  .contact-form input[type=text] {
-    width: 250px;
-    height: 20px;
+  .contact-form input[type=text], .contact-form input[type=email] {
     font-size: 0.9em;
   }
   .contact-form textarea {
-    width: 250px;
-    height: 100px;
-    padding: var(--backdown);
     font-size: 0.9em;
   }
   .contact-form input[type=submit] {
-    width: 90px;
-    height: 40px;
     font-size: 1em;
-    margin-top: 10px;
   }
   .contact-form label {
     font-size: 1em;
-    margin-top: var(--backdown);
   }
   .contact-us h1 {
     font-size: 1.5em;
