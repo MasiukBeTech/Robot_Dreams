@@ -5,7 +5,7 @@
         position: relative;
         top: 90px;
 
-        .container {
+        .main-container {
             width: 100%;
             max-width: 800px;
             margin: 0 auto 100px;
@@ -25,17 +25,8 @@
 }
 
 .contact-info {
-    p {
-        margin: {
-            top: 5px;
-            bottom: var(--backdown);
-        }
-        font-size: 1.4em;
-    }
-    span {
-        @extend p;
-        text-decoration: underline;
-    }
+    font-size: 1.1em;
+    margin: 15px 0;
 }
 
 div.address-map iframe {
@@ -48,11 +39,14 @@ div.address-map iframe {
     animation: form-animation;
     animation-duration: 4s;
 
+    label{
+        font-size: 1.2em;
+    }
+
     input[type="text"], input[type="email"]  {
         outline: 0;
         border: 2px solid var(--highlight-color);
         font-size: 1.3em;
-        color: var(--highlight-color); 
 
         &:focus {
             border: 2px solid var(--color-background);
@@ -65,7 +59,6 @@ div.address-map iframe {
         }
     }
     textarea {
-        border: 2px solid var(--highlight-color);
         resize: none;
         font-size: 1.1em;
         color: var(--highlight-color);
@@ -98,26 +91,17 @@ div.address-map iframe {
 
 @media screen and (max-width: 640px) {
     .contact-form {
-        input[type="text"] {
-            width: 250px;
-            height: 20px;
+        input[type="text"], input[type="email"] {
             font-size: 0.9em;
         }
         textarea {
-            width: 250px;
-            height: 100px;
-            padding: var(--backdown);
             font-size: 0.9em;
         }
         input[type="submit"] {
-            width: 90px;
-            height: 40px;
             font-size: 1.0em;
-            margin-top: 10px;
         }
         label {
             font-size: 1.0em;
-            margin-top: var(--backdown);
         }
     }
     .contact-us {
