@@ -1,10 +1,10 @@
 
 
-let number1 = prompt('Please, enter first numbers')
-let number2 = prompt('Please, enter second numbers')
+let number1 = +prompt('Please, enter first numbers')
+let number2 = +prompt('Please, enter second numbers')
 // console.log(number + number);
 // console.log(number + number);
-alert('Sum: ' + (number1 + number2) + ' Subtraction: ' + (number1 - number2) + ' Multiplication: ' + (number1 * number2) + ' Division: ' + (number1 / number2))
+alert('Sum: ' + (number1 + number2) + '; Subtraction: ' + (number1 - number2) + '; Multiplication: ' + (number1 * number2) + '; Division: ' + (number1 / number2))
 
 
 
