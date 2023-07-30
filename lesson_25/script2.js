@@ -1,113 +1,69 @@
-let number1 = prompt('Please, enter first numbers');
-let number2 = prompt('Please, enter second numbers');
+let a = {
+    x: 1,
+    y: 2,
+    test: {
+        x: 1,
+        y: 2
+    }
+};
+console.log(a);
 
-function sum(a, b) {
-  if ((a === 0 || a) && (b === 0 || b)) {
-    return a + b;
-  }
-}
-let resultSum = sum(+number1, +number2)
-// alert(resultSum);
-function subtraction(a, b) {
-  if ((a === 0 || a) && (b === 0 || b)) {
-    return a - b;
-  }
-}
-let resultSubtraction = subtraction(number1, number2)
-// alert(resultSubtraction);
-function multiplication(a, b) {
-  if ((a === 0 || a) && (b === 0 || b)) {
-    return a * b;
-  }
-}
-let resultMultiplication = multiplication(number1, number2)
-// alert(resultMultiplication);
-function division(a, b) {
-  if ((a === 0 || a) && (b === 0 || b)) {
-    return a / b;
-  }
-}
-let resultDivision = division(number1, number2)
-// alert(resultDivision);
-
-function filling() {
-   if (!number1 || !number2) {
-    let message = "You don't entered number";
-    alert(message);
-   } else if(number1 < number2) {
-       if (confirm("Are you sure you want to proceed with the operation?")) {
-        alert('Sum: ' + resultSum + '; Subtraction: '+ resultSubtraction + '; Multiplication: '+ resultMultiplication +'; Division: '+ resultDivision);
-      } else {
-        console.log('Cancel');
+function isEmptyObject(obj) {
+    for (let key in obj) {
+      if (obj.hasOwnProperty(key)) {
+        if (typeof obj[key] === 'object' && !isEmptyObject(obj[key])) {
+          return false;
+        }
+        return false;
       }
     }
-    else if(+number2 === 0) {
-        alert("You entered 0, you cannot divide by 0");
-    } else {
-    alert('Sum: ' + resultSum + '; Subtraction: '+ resultSubtraction + '; Multiplication: '+ resultMultiplication +'; Division: '+ resultDivision);
-   }
+    return true;
 }
-filling();
+let b = {};
 
-console.log('___________________')
-
-
-let sign = "#";
-function sharp() {
-    sign += "#";
-    console.log(sign);
-}
-
-sharp();
-sharp();
-sharp();
-sharp();
-sharp();
-
-console.log('___________________')
+console.log(isEmptyObject(a)); // false
+console.log(isEmptyObject(b)); // true
 
 
-let x = [50, 330, null, 5, '20', 70, false, 10, 100, 2];
-
-console.log(myArrayMax(x));
-
-function myArrayMax(arr) {
-  let len = arr.length;
-  let max = -Infinity;
-  while (len--) {
-    if (arr[len] > max) {
-      max = arr[len];
+let user = {
+    name: 'Ketty',
+    age: 30,
+    sayHello: function() {
+        console.log('Hello, I am '+ this.name + ', I am ' + this.age +' age');
     }
-  }
-  return max;
 }
+user.sayHello();
 
-
-console.log(myArrayMin(x));
-
-function myArrayMin(arr) { 
-  let len = arr.length;
-  let min = Infinity;
-  while (len--) {
-    if (typeof x[len] === "number") {
-      if (arr[len] < min) {
-        min = arr[len];
-      }
-    }
+let culculator = {
+    number1: null,
+    number2: null,
+    ask: function() {
+        this.number1 = prompt('Please, enter first numbers');
+        this.number2 = prompt('Please, enter second numbers');
+    },
+    sum: function() {
+        let num1 = parseFloat(this.number1);
+        let num2 = parseFloat(this.number2);
     
-  }
-  return min;
+        if (!isNaN(num1) && !isNaN(num2)) {
+          let resultSum = num1 + num2;
+          alert(resultSum);
+        } else {
+          alert('Invalid input!');
+        }
+    },
+    mul: function() {
+        let num1 = parseFloat(this.number1);
+        let num2 = parseFloat(this.number2);
+    
+        if (!isNaN(num1) && !isNaN(num2)) {
+          let resultMultiplication = num1 * num2;
+          alert(resultMultiplication);
+        } else {
+          alert('Invalid input!');
+        }
+    }  
 }
-
-
-
-
-
-
-
-
-
-
-
-
-    
+culculator.ask();
+culculator.sum();
+culculator.mul();
