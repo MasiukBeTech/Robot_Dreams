@@ -11,7 +11,7 @@ let myGlobalSum;
 
 function sum(a, b) {
     // let zrr = [1, 5, 10];
-    if ((a === 0 || a) && (b === 0 || b)) {
+    if (typeof a === 'number' && !isNaN(a) && typeof b === 'number' && !isNaN(b)) {
         myGlobalSum = a + b;
     } else {
         console.log('Error');

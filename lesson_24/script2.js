@@ -2,32 +2,32 @@ let number1 = prompt('Please, enter first numbers');
 let number2 = prompt('Please, enter second numbers');
 
 function sum(a, b) {
-  if ((a === 0 || a) && (b === 0 || b)) {
+  if (typeof a === 'number' && !isNaN(a) && typeof b === 'number' && !isNaN(b)) {
     return a + b;
   }
 }
 let resultSum = sum(+number1, +number2)
 // alert(resultSum);
 function subtraction(a, b) {
-  if ((a === 0 || a) && (b === 0 || b)) {
+  if (typeof a === 'number' && !isNaN(a) && typeof b === 'number' && !isNaN(b)) {
     return a - b;
   }
 }
-let resultSubtraction = subtraction(number1, number2)
+let resultSubtraction = subtraction(+number1, +number2)
 // alert(resultSubtraction);
 function multiplication(a, b) {
-  if ((a === 0 || a) && (b === 0 || b)) {
+  if (typeof a === 'number' && !isNaN(a) && typeof b === 'number' && !isNaN(b)) {
     return a * b;
   }
 }
-let resultMultiplication = multiplication(number1, number2)
+let resultMultiplication = multiplication(+number1, +number2)
 // alert(resultMultiplication);
 function division(a, b) {
-  if ((a === 0 || a) && (b === 0 || b)) {
+  if (typeof a === 'number' && !isNaN(a) && typeof b === 'number' && !isNaN(b)) {
     return a / b;
   }
 }
-let resultDivision = division(number1, number2)
+let resultDivision = division(+number1, +number2)
 // alert(resultDivision);
 
 function filling() {
@@ -67,38 +67,33 @@ sharp();
 console.log('___________________')
 
 
-let x = [50, 330, null, 5, '20', 70, false, 10, 100, 2];
-
-console.log(myArrayMax(x));
+let x = [50, 330, null, 5, '20', 70, false, 2, 10, 100];
 
 function myArrayMax(arr) {
   let len = arr.length;
   let max = -Infinity;
-  while (len--) {
-    if (arr[len] > max) {
-      max = arr[len];
+  for (let i = 0; i < len; i++) {
+    if (typeof arr[i] === "number" && arr[i] > max) {
+        max = arr[i];
     }
   }
   return max;
 }
+console.log(myArrayMax(x));
 
 
-console.log(myArrayMin(x));
-
-function myArrayMin(arr) { 
+function myArrayMin(arr) {
   let len = arr.length;
   let min = Infinity;
-  while (len--) {
-    if (typeof x[len] === "number") {
-      if (arr[len] < min) {
-        min = arr[len];
-      }
+  for (let i = 0; i < len; i++) {
+    if (typeof arr[i] === "number" && arr[i] < min) {
+      min = arr[i];
     }
-    
   }
+
   return min;
 }
-
+console.log(myArrayMin(x));
 
 
 
