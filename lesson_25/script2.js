@@ -40,13 +40,10 @@ let culculator = {
     ask: function() {
         this.number1 = prompt('Please, enter first numbers');
         this.number2 = prompt('Please, enter second numbers');
-
-        // let num1 = parseFloat(this.number1);
-        // let num2 = parseFloat(this.number2);
     },
     sum: function() {
-        // let num1 = parseFloat(this.number1);
-        // let num2 = parseFloat(this.number2);
+        let num1 = parseFloat(this.number1);
+        let num2 = parseFloat(this.number2);
     
         if (!isNaN(num1) && !isNaN(num2)) {
           let resultSum = num1 + num2;
@@ -56,8 +53,8 @@ let culculator = {
         }
     },
     mul: function() {
-        // let num1 = parseFloat(this.number1);
-        // let num2 = parseFloat(this.number2);
+        let num1 = parseFloat(this.number1);
+        let num2 = parseFloat(this.number2);
     
         if (!isNaN(num1) && !isNaN(num2)) {
           let resultMultiplication = num1 * num2;
@@ -67,10 +64,6 @@ let culculator = {
         }
     }  
 }
-
-let num1 = parseFloat(this.number1);
-let num2 = parseFloat(this.number2);
-
 culculator.ask();
 culculator.sum();
 culculator.mul();
