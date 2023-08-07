@@ -1,0 +1,14 @@
+.my-h3 {
+    background-color: aqua;
+}
+.tweet {
+    width: 600px;
+    background-color: olivedrab;
+    margin: 0 auto;
+}
+.tweet h2 {
+    color: brown;
+}
+.tweet img {
+    width: 15px;
+}
