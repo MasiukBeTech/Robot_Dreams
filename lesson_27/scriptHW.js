@@ -84,7 +84,7 @@ function myArrayMax(arr) {
   let len = arr.length;
   let max = -Infinity;
   for (let i = 0; i < len; i++) {
-    if (typeof arr[i] === "number" && arr[i] > max) {
+    if (typeof arr[i] === "number" && arr[i] > max && !isNaN(arr)) {
         max = arr[i];
     }
   }
@@ -99,7 +99,7 @@ function myArrayMin(arr) {
   let len = arr.length;
   let min = Infinity;
   for (let i = 0; i < len; i++) {
-    if (typeof arr[i] === "number" && arr[i] < min) {
+    if (typeof arr[i] === "number" && arr[i] < min && !isNaN(arr)) {
       min = arr[i];
     }
   }
