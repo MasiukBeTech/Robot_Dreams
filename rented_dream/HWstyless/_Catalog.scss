@@ -18,7 +18,7 @@
             margin: 5px 0 0 5px;
             filter: opacity(0.8);
 
-            &:hover {
+            .clicked-bigger {
                 z-index: 3;
                 position: relative;
                 animation: gallery-photo;

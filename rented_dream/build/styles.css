@@ -282,7 +282,7 @@ header button span {
   margin: 5px 0 0 5px;
   filter: opacity(0.8);
 }
-.catalog main img:hover {
+.catalog main img .clicked-bigger {
   z-index: 3;
   position: relative;
   animation: gallery-photo;
