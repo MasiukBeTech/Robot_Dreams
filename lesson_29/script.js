@@ -55,3 +55,9 @@ console.log(myValue4);
 if (true) {
     x = 9999;
 }
+
+
+function sum(a, b) {
+    return a + b;
+}
+console.assert(sum(5, 8) === 9);
