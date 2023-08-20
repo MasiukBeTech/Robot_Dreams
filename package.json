@@ -2,5 +2,8 @@
   "dependencies": {
     "g": "^2.0.1",
     "jest": "^29.6.2"
+  },
+  "devDependencies": {
+    "jsdom": "^22.1.0"
   }
 }

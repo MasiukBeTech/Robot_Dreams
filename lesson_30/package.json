@@ -2,7 +2,7 @@
   "name": "lesson_30",
   "version": "1.0.0",
   "description": "",
-  "main": "sum.js",
+  "main": "HW.js",
   "scripts": {
     "jest": "jest"
   },
