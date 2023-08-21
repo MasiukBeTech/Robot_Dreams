@@ -73,10 +73,10 @@ let num = new CancelableAccumulator(this.number);
 
 
 
-const { JSDOM } = require('jsdom');
-const dom = new JSDOM('<!doctype html><html><body><div id="root"></div></body></html>');
+// const { JSDOM } = require('jsdom');
+// const dom = new JSDOM('<!doctype html><html><body><div id="root"></div></body></html>');
 
-global.document = dom.window.document;
+// global.document = dom.window.document;
 function handleImageClick() {
     let img = document.querySelectorAll('main img');
     let isActImgZoomed = false;

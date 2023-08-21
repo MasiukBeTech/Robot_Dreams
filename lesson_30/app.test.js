@@ -32,14 +32,23 @@ describe('test run function', () =>{
         expect(appObj.userSecond.universityName).toContain('Lviv');
     });
     it('should add product to the cart', () => {
-        // user.checkUserIsLogged.mockImplementation(() => {
-        //     return false;
-        // });
         let spyLogger = jest.spyOn(appObj.userFirst, 'checkUserIsLogged');
         appObj.userFirst.addToCart()
 
         expect(spyLogger).toHaveBeenCalled();
         expect(appObj.userFirst.cart.length).toBe(1);
         expect(appObj.userFirst.cart[0]).toBe('iphone');
+    });
+    it('should add product to the cart', () => {
+        appObj.userFirst.checkUserIsLogged = jest.fn();
+        appObj.userFirst.checkUserIsLogged.mockImplementation(() => {
+            return false;
+        });
+        let spyLogger = jest.spyOn(appObj.userFirst, 'checkUserIsLogged');
+        appObj.userFirst.addToCart()
+
+        expect(spyLogger).toHaveBeenCalled();
+        expect(appObj.userFirst.cart.length).toBe(0);
+        expect(appObj.userFirst.cart).toEqual([]);
     });
 });
