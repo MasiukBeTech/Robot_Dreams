@@ -1,0 +1,37 @@
+body{
+    padding: 20px 30px;
+}
+h1 {
+    text-align: center;
+    
+}
+main img {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    height: 240px;
+}
+form {
+    width: 800px;
+    display: block;
+    margin-top: 30px;
+}
+.checked {
+    color: orange;
+}
+form .star-rating span {
+    font-size: 1.2em;
+    cursor: pointer;
+}
+form label {
+    display: block;
+    font-size: 1.2em;
+}
+.reviews-list {
+    margin: 20px 0 10px 0;
+}
+.review {
+    border: 1px solid #333;
+    margin: 15px 0;
+    padding: 10px;
+}
