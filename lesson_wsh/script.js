@@ -10,7 +10,7 @@ function getUser() {
             let users = [];
             for (const key in data) {
                 users.push({...data[key]});
-              }
+            }
             return users;
           })
           .then((users) => {

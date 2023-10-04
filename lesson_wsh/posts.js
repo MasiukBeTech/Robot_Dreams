@@ -1,18 +1,18 @@
 let postListHTML;
 
 function getPost(id) {
-        let urlParams = new URLSearchParams(window.location.search);
-        // Отримати значення id з URL
-        const userId = urlParams.get('id');
+  let urlParams = new URLSearchParams(window.location.search);
+  // Отримати значення id з URL
+  const userId = urlParams.get('id');
 
-        fetch(`https://gorest.co.in/public/v2/users/${userId}/posts`)
-          .then((response) => response.json())
-          .then((data) => {
-            console.log(data);
-            data.forEach((post) => {
-              appendPost(post);
-          })
-        })
+  fetch(`https://gorest.co.in/public/v2/users/${userId}/posts`)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
+      data.forEach((post) => {
+        appendPost(post);
+    })
+  })
 }
 
 function appendPost(post) {
