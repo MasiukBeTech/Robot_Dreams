@@ -1,0 +1,17 @@
+body{
+    padding: 20px 30px;
+}
+h1 {
+    text-align: center;
+}
+h2 {
+    display: block;
+}
+.userPost {
+    padding-top: 20px;
+    height: 500px;
+    width: 80%;
+}
+.user {
+    width: 50%;
+}
