@@ -1,0 +1,12 @@
+
+.backgroundImg {
+    height: 120px;
+    padding: 0 10px;
+}
+header {
+    width: 100%;
+}
+.header-mood {
+    display: flex;
+
+}
